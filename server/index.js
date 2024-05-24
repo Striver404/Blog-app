@@ -16,7 +16,7 @@ const secret = "askdfjsghr3498523894tetjr3049jkfj";
 const salt = bcrypt.genSaltSync(10);
 
 app.use(
-  cors({ credentials: true, origin: "https://blog-app-three-pink.vercel.app/" })
+  cors({ credentials: true, origin: "*" })
 );
 app.use(express.json());
 app.use(cookieParser());
