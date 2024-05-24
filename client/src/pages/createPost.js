@@ -22,6 +22,7 @@ export default function CreatePost(ev) {
       method: "POST",
       body: data,
       credentials: "include",
+      "Access-Control-Allow-Origin": "*",
     });
 
     if (response.ok) {

@@ -7,6 +7,7 @@ export default function Header() {
   useEffect(() => {
     fetch("https://blog-app-icb6.onrender.com/profile", {
       credentials: "include",
+      "Access-Control-Allow-Origin": "*",
     }).then((response) => {
       response.json().then((userInfo) => {
         setUserInfo(userInfo);
@@ -17,6 +18,7 @@ export default function Header() {
   function logout() {
     fetch("https://blog-app-icb6.onrender.com/logout", {
       credentials: "include",
+      "Access-Control-Allow-Origin": "*",
       method: "POST",
     }).then(() => {
       setUserInfo(null);

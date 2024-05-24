@@ -35,6 +35,7 @@ export default function EditPost() {
       method: "PUT",
       body: data,
       credentials: "include",
+      "Access-Control-Allow-Origin": "*",
     });
     if (response.ok) {
       setRedirect(true);
