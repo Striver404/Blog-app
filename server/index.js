@@ -16,7 +16,7 @@ const app = express();
 const secret = 'askdfjsghr3498523894tetjr3049jkfj';
 const salt = bcrypt.genSaltSync(10);
  
-app.use(cors({credentials:true,origin:'http://localhost:3000'}));
+app.use(cors({credentials:true,origin:'https://blog-app-three-pink.vercel.app/'}));
 app.use(express.json());
 app.use(cookieParser());
 app.use('/uploads',express.static(__dirname + '/uploads'));
